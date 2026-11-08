@@ -1,0 +1,5 @@
+ALTER TABLE "Course"
+  ADD COLUMN "level" TEXT NOT NULL DEFAULT 'All levels',
+  ADD COLUMN "outcomes" TEXT[] NOT NULL DEFAULT ARRAY[]::TEXT[],
+  ADD COLUMN "requirements" TEXT[] NOT NULL DEFAULT ARRAY[]::TEXT[],
+  ADD COLUMN "instructorRole" TEXT NOT NULL DEFAULT 'Instructor';
